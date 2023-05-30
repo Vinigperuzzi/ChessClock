@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Clock</title>
+</head>
+<body>
+    <section id="main-content">
+        <div id="white-side" class="clock-content">
+            <div class="clock-timer">
+                <div class="hours timer">
+                    <p class="rotate">10</p>
+                </div>
+                <div class="minutes timer">
+                    <p class="rotate">00</p>
+                </div>
+                <div class="seconds timer">
+                    <p class="rotate">01</p>
+                </div>
+            </div>
+            <div class="clock-ui" id="white-ui">
+                <form id="form-1" class="form" action="#" method="#">
+                    <p><span>Set Timer</span> <input type="time" name="timer-1" id="timer-1" value="10:00:01"></p>
+                    <p><span>Set Incremento</span> <input type="time" name="incremento-1" id="incremento-1" value="00:00:05"></p>
+                    <p><button type="submit"><span>Set</span></button></p>
+                </form>
+                <div class="click">
+                    <p class="click-button">
+                        click
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="central-boarder">
+            <div>
+                <p>
+                    <a href="Assets/HTML/info.html"><img src="Assets/img/iFull.png" id="infoI" alt="Icon of the i for information, it indicates that instructions could be listen here" class="responsive"></a>
+                </p>
+            </div>
+        </div>
+        <div id="black-side" class="clock-content">
+            <div class="clock-timer">
+                <div class="hours timer">
+                    <p>10</p>
+                </div>
+                <div class="minutes timer">
+                    <p>00</p>
+                </div>
+                <div class="seconds timer">
+                    <p>01</p>
+                </div>
+            </div>
+            <div class="clock-ui">
+                <form id="form-2" class="form" action="#" method="#">
+                    <p><span>Set Timer</span> <input type="time" name="timer-2" id="timer-2" value="10:00:01"></p>
+                    <p><span>Set Incremento</span> <input type="time" name="incremento-2" id="incremento-2" value="00:00:05"></p>
+                    <p><button type="submit"><span>Set</span></button></p>
+                </form>
+                <div class="click">
+                    <p class="click-button">
+                        click
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <link rel="stylesheet" href="Assets/css/style.css">]
+    <script src="Assets/js/script.js"></script>
+</body>
+</html>

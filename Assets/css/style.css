@@ -1,0 +1,195 @@
+:root{
+    --white-color: #cacaca;
+    --cor1: #d3c6cc;
+    --cor2: #e2c3c6;
+    --cor3: #eecfc4;
+    --cor4: #f8e6c6;
+    --cor5: #ffffcc;
+    --cor4Darker: #a79b87;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#central-boarder{
+    width: 3vw;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#central-boarder p{
+    width: 100%;
+    height: 100%;
+    font-size: calc(2vh + 2vw);
+}
+
+#central-boarder a{
+    text-decoration: none;
+    color: gold;
+}
+
+#infoI:hover{
+    transform: rotateZ(30deg);
+    transition: all 700ms ease-in-out;
+}
+
+#infoI:active{
+    transform: translateY(10px);
+    transition: all 0ms;
+}
+
+#white-side{
+    background-color: var(--cor3);
+}
+
+#black-side{
+    background-color: var(--cor1);
+}
+
+#main-content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.clock-content{
+    width: 48.5vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.clock-timer{
+    width: 65%;
+    height: 40%;
+    background-color: coral;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.timer{
+    display: flex;
+    width: 25%;
+    height: 35%;
+    background-color: var(--cor5);
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.timer p{
+    font-family: monospace;
+    font-size: calc(3vh + 3vw);
+    color: red;
+}
+
+.clock-ui{
+    width: 65%;
+    height: 30%;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.form{
+    display: flex;
+    width: 90%;
+    height: 25%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    padding: 0 5%;
+}
+
+input{
+    cursor: pointer;
+}
+
+span{
+    font-family: sans-serif;
+    font-size: calc(0.6vh + 0.6vw);
+    color: gold;
+}
+
+button{
+    cursor: pointer;
+}
+
+.click{
+    width: 100%;
+    height: 65%;
+    background-color: var(--cor4);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.click:hover{
+    background-color: var(--cor4Darker);
+    transition: all 200ms ease-in-out;
+}
+
+.click:active{
+    transform: translateY(1.5vh);
+}
+
+.click p{
+    font-family: sans-serif;
+    font-size: calc(4vh + 4vw);
+    text-transform: uppercase;
+}
+
+.responsive {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (orientation:portrait) {
+    #main-content{
+        flex-direction: column;
+    }
+    .clock-content{
+        width: 100vw;
+        height: 48.5vh;
+    }
+    #central-boarder{
+        width: 100vw;
+        height: 3vh;
+        background-color: gray;
+    }
+    #white-side.clock-content{
+        flex-direction: column-reverse;
+    }
+    .rotate{
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+    #white-ui{
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+    .form{
+        width: 90%;
+        height: 40%;
+    }
+    .click{
+        width: 100%;
+        height: 50%;
+    }
+}

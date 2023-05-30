@@ -1,0 +1,156 @@
+:root{
+    --white-color: #cacaca;
+    --cor1: #d3c6cc;
+    --cor2: #e2c3c6;
+    --cor3: #eecfc4;
+    --cor4: #f8e6c6;
+    --cor5: #ffffcc;
+    --cor4Darker: #a79b87;
+    --cor5Darker: #646451;
+    --cor4Reder: #ebafaf;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#top-header{
+    max-width: 100%;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--cor4Darker);
+    justify-content: space-between;
+}
+
+#icon-holder{
+    box-sizing: margin-box;
+    width: 20vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon-holder p{
+    margin-left: 25px;
+    font-family: sans-serif;
+    font-size: calc(0.9vh + 0.9vw);
+    color: var(--cor5);
+}
+
+#icon-holder:hover{
+    cursor: pointer;
+    transform: translateX(20px);
+    transition: all 300ms ease-in-out;
+}
+
+#icon{
+    border-radius: 30px;
+}
+
+.header-links{
+    display: flex;
+    justify-self: end;
+    align-self: flex-end;
+    gap: 4vw;
+    margin-right: 2vw;
+}
+
+.header-links a{
+    color: var(--cor5Darker);
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+.header-links a:hover{
+    transform: translateY(-4px);
+    transition: all 300ms ease-in-out;
+}
+
+.header-links a:active{
+    transform: translateY(5px);
+    color: black;
+}
+
+#voltar{
+    background-color: var(--cor4Reder);
+    border-radius: 10px;
+}
+
+#voltar:hover{
+    transform: translateX(-4px);
+    transition: all 300ms ease-in-out;
+}
+
+article{
+    width: 100%;
+    height: 82vh;
+    background-color: var(--cor4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article p{
+    width: 45%;
+    height: 100%;
+    margin: 6vh;
+    padding: 12vh;
+    background-color: var(--cor1);
+    border-radius: 120px;
+    color: var(--cor5Darker);
+    font-family: sans-serif;
+    font-size: calc(0.9vh + 0.9vw);
+    box-shadow: 20px 12px 12px 12px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--cor4Darker);
+    bottom: 0;
+    justify-content: space-evenly;
+}
+
+footer p{
+    width: auto;
+    height: auto;
+    font-size: calc(2vw + 2vh);
+    font-family: sans-serif;
+    color: var(--color5);
+}
+
+#footer-links a img{
+    border-radius: 10px;
+}
+
+
+@media screen and (orientation:portrait) {
+    article{
+        flex-direction: column;
+        justify-content: center;
+        gap: 5%;
+    }
+    article p{
+        width: 80vw;
+        height: 30vh;
+        margin: 0;
+        border: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        width: auto;
+        height: auto;
+        font-size: calc(1vw + 1vh);
+        font-family: sans-serif;
+        color: var(--color5);
+    }
+}

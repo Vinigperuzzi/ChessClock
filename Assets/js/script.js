@@ -60,8 +60,8 @@ function setTime (event, index){
     let oldColor = document.querySelector(':root');
     let whiteColor = document.querySelector("#white-click p");
     let blackColor = document.querySelector("#black-click p");
-    whiteColor.innerHTML = "click!";
-    blackColor.innerHTML = "click!";
+    whiteColor.innerHTML = "click";
+    blackColor.innerHTML = "click";
     oldColor.style.setProperty('--cor3', '#eecfc4');
     oldColor.style.setProperty('--cor1', '#d3c6cc');
     let [hours, minutes, seconds] = timer.value.split(":");

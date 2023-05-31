@@ -180,13 +180,16 @@ button{
         width: 100vw;
         height: 48.5vh;
     }
+    #white-side.clock-timer{
+        flex-direction: row-reverse;
+    }
     #central-boarder{
         width: 100vw;
         height: 3vh;
         background-color: gray;
     }
-    #white-side.clock-content{
-        flex-direction: column-reverse;
+    #row-reverse{
+        flex-direction: row-reverse;
     }
     .rotate{
         transform: rotateX(180deg) rotateY(180deg);

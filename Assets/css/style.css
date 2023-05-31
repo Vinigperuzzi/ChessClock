@@ -36,8 +36,8 @@
 }
 
 #infoI:hover{
-    transform: rotateZ(30deg);
-    transition: all 700ms ease-in-out;
+    transform: rotateZ(360deg);
+    transition: all 1000ms ease-in-out;
 }
 
 #infoI:active{
@@ -139,6 +139,16 @@ button{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+#white-click{
+    background-color: white;
+    color: black;
+}
+
+#black-click{
+    background-color: black;
+    color: white;
 }
 
 .click:hover{

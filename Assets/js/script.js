@@ -98,12 +98,12 @@ function click (event, index){
   if (index == 0 && toClick == 0){
     clearInterval(whiteIntervalID);
     setInc(0);
-    blackIntervalID = setInterval(displayBlackTimer, 100);
+    blackIntervalID = setInterval(displayBlackTimer, 1000);
   }
   if (index == 1 && toClick == 1){
     clearInterval(blackIntervalID);
     setInc(1);
-    whiteIntervalID = setInterval(displayWhiteTimer, 100);
+    whiteIntervalID = setInterval(displayWhiteTimer, 1000);
   }
   toClick = (++toClick)%2;
 }

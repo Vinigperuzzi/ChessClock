@@ -188,6 +188,9 @@ button{
         height: 3vh;
         background-color: gray;
     }
+    #black-side {
+        flex-direction: column-reverse;
+    }
     #row-reverse{
         flex-direction: row-reverse;
     }

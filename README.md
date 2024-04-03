@@ -20,4 +20,5 @@ Feel free to explore the ChessClock project here. If you have ideas for improvem
 
 Thank you for choosing ChessClock for your timed chess matches. May your games be strategic and your moves be timely! 🕊️🏁
 
-### Vinigperuzzi
+Happy Coding! 
+### Vinigperuzzi 🧙‍♂️
